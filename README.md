@@ -1,16 +1,56 @@
-# React + Vite
+# 🧳 JobBoard NZ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern job board web app built with React, featuring advanced search and filtering.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+> [View Live App](https://97chopra.github.io/job-board-app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- 🔍 Search by job title, skill or company name
+- 📍 Filter by location with remote-only toggle
+- 💼 Filter by job type (Full-time, Part-time, Contract, Internship)
+- 🎯 Filter by experience level (Entry, Mid, Senior)
+- 🗂️ Filter by category (Technology, Design, Data & AI, etc.)
+- 💰 Salary range slider (min & max)
+- 🏷️ Active filter chips with individual remove buttons
+- 📊 Live results count that updates as filters change
 
-## React Compiler
+## 🛠️ Tech Stack
+- React 18
+- Vite
+- React Router DOM
+- Custom Hooks (useJobFilter)
+- CSS3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
+src/
+├── components/       # Reusable UI components
+│   ├── JobCard.jsx
+│   ├── SearchBar.jsx
+│   ├── FilterPanel.jsx
+│   ├── SalarySlider.jsx
+│   └── ActiveFilterChips.jsx
+├── pages/            # Full page components
+│   └── HomePage.jsx
+├── hooks/            # Custom React hooks
+│   └── useJobFilter.js
+└── data/             # Mock job data
+└── jobs.js
+## ⚙️ Getting Started
 
-## Expanding the ESLint configuration
+```bash
+# Clone the repo
+git clone https://github.com/97chopra/job-board-app.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+## 👩‍💻 Author
+**Aarti** — Final year Software Programming & Data Science AI student at AUT
+- GitHub: [@97chopra](https://github.com/97chopra)
